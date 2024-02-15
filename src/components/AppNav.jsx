@@ -28,6 +28,14 @@ function AppNav() {
           </NavLink>
         </li>
         <li>
+          <NavLink to="/app/testtable">
+            <div className="flex flex-row">
+              <BsDatabase />
+              <span className="ps-3">Manage test</span>
+            </div>
+          </NavLink>
+        </li>
+        <li>
           <NavLink to="/app/usermanage">
             <div className="flex flex-row">
               <FaRegUser />
@@ -53,7 +61,6 @@ function AppNav() {
         </li>
         <li>
           <NavLink to="/app/exercisemanage">
-            {" "}
             <div className="flex flex-row">
               <FaRunning />
               <span className="ps-3">Manage Exercise</span>
