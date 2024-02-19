@@ -13,7 +13,7 @@ const AnimationComponent = () => {
         1000,
         "Welcome to Admin HiFine. Data is the fuel",
         1000,
-        "Welcome to Admin HiFine. Data is the fuel and power to drive innovative products and services.",
+        "Welcome to Admin HiFine.Data is the fuel and power to drive innovative products and services.",
         1000,
       ]}
       wrapper="span"
