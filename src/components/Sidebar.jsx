@@ -8,7 +8,7 @@ function Sidebar() {
       <AppNav />
 
       <footer>
-        <p>&copy; Copyright{new Date().getFullYear()} by HIFINE</p>
+        <p>&copy; Copyright{new Date().getFullYear()} </p>
       </footer>
     </aside>
   );
