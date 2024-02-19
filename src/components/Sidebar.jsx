@@ -14,7 +14,7 @@ function Sidebar() {
       {/* <footer className={styles.footer}> */}
       <footer>
         {/* <p className={styles.copyright}> */}
-        <p>&copy; Copyright{new Date().getFullYear()} by world Inc.</p>
+        <p>&copy; Copyright{new Date().getFullYear()} by HIFINE</p>
       </footer>
     </aside>
   );

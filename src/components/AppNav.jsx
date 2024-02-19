@@ -44,18 +44,18 @@ function AppNav() {
           </NavLink>
         </li>
         <li>
-          <NavLink to="/app/imagemanage">
+          <NavLink to="/app/postmanage">
             <div className="flex flex-row">
               <FaRegImage />
-              <span className="ps-3">Manage Image</span>
+              <span className="ps-3">Manage post</span>
             </div>
           </NavLink>
         </li>
         <li>
-          <NavLink to="/app/activitymanage">
+          <NavLink to="/app/listtable">
             <div className="flex flex-row">
               <RxActivityLog />
-              <span className="ps-3">Manage Activity</span>
+              <span className="ps-3">Manage List</span>
             </div>
           </NavLink>
         </li>

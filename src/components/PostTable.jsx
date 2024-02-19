@@ -1,6 +1,6 @@
-import TestData from "../features/TestCase/TestData";
+import PostData from "../features/PostManage/PostData";
 
-function TestTable() {
+function PostTable() {
   return (
     <div className="container mx-auto px-4 box-border flex flex-col text-center text-3xl text-black">
       <div type="horizontal" className="flex justify-between ">
@@ -8,10 +8,9 @@ function TestTable() {
         <p>Filter / Sort</p> */}
       </div>
       <br />
-
-      <TestData />
+      <PostData />
     </div>
   );
 }
 
-export default TestTable;
+export default PostTable;

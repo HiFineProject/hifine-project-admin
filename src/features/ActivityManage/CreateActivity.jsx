@@ -1,21 +1,20 @@
 import { useState } from "react";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
-import { IoArrowBackCircleSharp } from "react-icons/io5";
 
-function CreateTest() {
+function CreateActivity() {
   const navigate = useNavigate();
 
-  // const [userId, setUserId] = useState();
+  const [userId, setUserId] = useState();
   const [email, setEmail] = useState();
   const [password, setPassword] = useState();
 
   const [reload, setReload] = useState(false);
 
   ///post
-  const submitHandler = async (email, password) => {
+  const submitHandler = async (userId, email, password) => {
     const requestData = {
-      // userId: userId,
+      userId: userId,
       email: email,
       password: password,
     };
@@ -36,7 +35,7 @@ function CreateTest() {
   ///////////////////////////////////////////////////////////////
 
   const clearInput = () => {
-    // setUserId("");
+    setUserId("");
     setEmail("");
     setPassword("");
   };
@@ -53,15 +52,14 @@ function CreateTest() {
           event.preventDefault();
           navigate("/app/testtable");
         }}
-        className="text-5xl text-gray-500"
       >
-        <IoArrowBackCircleSharp />
+        Back
       </button>
       {/* <BackButton /> */}
-      <div className="bg-white font-bold h-[320px] ">
-        <br />
-        {/* <div className="flex flex-row items-center text-end ">
-          <h2 className="w-2/5 text-2xl pe-20">No. :</h2>
+      <div>
+        <br></br>
+        <div className="flex flex-row items-center text-center">
+          <h2 className="w-2/5">No. :</h2>
           <div className="w-1/5">
             <input
               type="text"
@@ -70,11 +68,11 @@ function CreateTest() {
               placeholder="ID"
             />
           </div>
-        </div> */}
+        </div>
 
         <br />
-        <div className="flex flex-row items-center text-end">
-          <h2 className="w-2/5 text-2xl pe-20">e-Mail :</h2>
+        <div className="flex flex-row items-center">
+          <h2 className="w-2/5">e-Mail :</h2>
           <div className="w-2/5">
             <input
               type="email"
@@ -86,8 +84,8 @@ function CreateTest() {
         </div>
 
         <br />
-        <div className="flex flex-row items-center text-end">
-          <h2 className="w-2/5 text-2xl pe-20">Password :</h2>
+        <div className="flex flex-row items-center">
+          <h2 className="w-2/5">Password :</h2>
           <div className="w-2/5">
             <input
               type="password"
@@ -103,7 +101,7 @@ function CreateTest() {
             className="bg-green-500 rounded-md p-3 hover:bg-green-900 hover:text-white"
             onClick={(e) => {
               e.preventDefault();
-              submitHandler(email, password);
+              submitHandler(userId, email, password);
             }}
           >
             Submit
@@ -121,4 +119,4 @@ function CreateTest() {
   );
 }
 
-export default CreateTest;
+export default CreateActivity;
