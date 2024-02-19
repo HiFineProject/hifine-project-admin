@@ -163,7 +163,7 @@ function PostData() {
             </button>
           </Link>
         </div>
-        <table className="border border-separate  border-collapse border-slate-500 table-fixed ">
+        <table className="border border-separate  border-slate-500 table-fixed ">
           <thead className="text-2xl border border-slate-400 text-gray-800">
             <tr className="">
               {/* <th className="border border-slate-300 ">ID</th> */}

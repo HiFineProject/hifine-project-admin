@@ -1,11 +1,9 @@
 import { NavLink } from "react-router-dom";
 import styles from "./AppNav.module.css";
 import { AiOutlineDashboard } from "react-icons/ai";
-// import { BsDatabase } from "react-icons/bs";
 import { FaRegUser } from "react-icons/fa";
 import { FaRegImage } from "react-icons/fa";
 import { RxActivityLog } from "react-icons/rx";
-// import { FaRunning } from "react-icons/fa";
 
 function AppNav() {
   return (
@@ -19,22 +17,6 @@ function AppNav() {
             </div>
           </NavLink>
         </li>
-        {/* <li>
-          <NavLink to="/app/datatable">
-            <div className="flex flex-row">
-              <BsDatabase />
-              <span className="ps-3">Manage Data</span>
-            </div>
-          </NavLink>
-        </li>
-        <li>
-          <NavLink to="/app/testtable">
-            <div className="flex flex-row">
-              <BsDatabase />
-              <span className="ps-3">Manage test</span>
-            </div>
-          </NavLink>
-        </li> */}
         <li>
           <NavLink to="/app/usermanage">
             <div className="flex flex-row">
@@ -59,14 +41,6 @@ function AppNav() {
             </div>
           </NavLink>
         </li>
-        {/* <li>
-          <NavLink to="/app/exercisemanage">
-            <div className="flex flex-row">
-              <FaRunning />
-              <span className="ps-3">Manage Exercise</span>
-            </div>
-          </NavLink>
-        </li> */}
       </ul>
     </nav>
   );
